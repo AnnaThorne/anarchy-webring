@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+	line-height: 1.6;
+    background-color: #111;
+    color: #fff;
+	max-width: 80rem;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+h1,h2,h3,h4 {
+	font-family: Courier New, Courier, Consolas, monospace;
+}
+
+a {
+    color: #f3c;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover, a:focus {
+    text-decoration: none; 
+    background-color: #f3c;
+    color: #fff; 
+}
+
+table {	
+    width: 90%;
+    border-collapse: collapse;
+    margin: 12px auto;
+	font-size: 1em;
+}
+
+tr { 
+    margin-bottom: 10px; 
+}
+
+tr:nth-child(odd) {
+        background-color: #222; /* Light gray for odd rows */
+}
+
+tr:hover {
+    background-color: #444; /*  hover effect for table rows */
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid #666;
+	text-align: left; 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+th {
+    background-color: #444;
+    text-align: center;
+	font-size: 1.1em;
+	font-family: Courier New, Courier, Consolas, monospace;
+}
+
+.container {
+    max-width: 800px; 
+    margin: auto;
+    padding: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 90%; 
+    }
+
+    table { 
+		width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        display: block;
+        text-align: left;
+		white-space: normal;
+    }
+	
+    tr {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+}
